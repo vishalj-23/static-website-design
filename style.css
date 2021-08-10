@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;500&display=swap");
 * {
   margin: 0;
@@ -18,14 +18,22 @@
   position: sticky;
   top: 0;
 }
+.btn-nav {
+  height: 30px;
+}
+.btn-icon {
+  padding-right: 5px;
+}
 h1,
 h3 {
-  color: rgb(26, 26, 85);
-  font-family: "Roboto", sans-serif;
+  color: rgb(21, 21, 63);
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 p {
   color: gray;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
   /* font-size: 4px; */
 }
 .nav-list {
@@ -114,15 +122,15 @@ p {
   top: 30px;
 }
 .blank {
-  height: 130vh;
+  height: 140vh;
   margin-top: 100px;
   /* padding: 60px; */
-  background-color: aqua;
+  /* background-color: aqua; */
   position: relative;
 }
 .blank h1 {
   font-size: 40px;
-  margin-left: 80px;
+  margin-left: 120px;
   position: absolute;
   top: 20px;
   /* padding-top: 30px; */
@@ -140,12 +148,13 @@ p {
 }
 
 .cards-do {
-  height: 250px;
-  width: 300px;
+  height: 300px;
+  width: 350px;
   border-radius: 12px;
   border-style: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
 
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .card-1 {
   position: absolute;
@@ -155,27 +164,27 @@ p {
 .card-2 {
   position: absolute;
   right: 20px;
-  top: 313px;
+  top: 367px;
 }
 .card-3 {
   position: absolute;
   right: 20px;
-  top: 580px;
+  top: 687px;
 }
 .card-4 {
   position: absolute;
-  right: 340px;
+  right: 392px;
   top: 200px;
 }
 .card-5 {
   position: absolute;
-  right: 340px;
-  top: 467px;
+  right: 392px;
+  top: 521px;
 }
 .card-6 {
   position: absolute;
-  /* left: 245px; */
-  right: 661px;
+
+  right: 763px;
   top: 444px;
 }
 .cards-do h3 {
@@ -188,7 +197,7 @@ p {
 
 .info-1 {
   height: 40vh;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .info-1 h1 {
   font-size: 40px;
@@ -197,7 +206,7 @@ p {
 }
 .info-2 {
   height: 40vh;
-  background-color: rgb(148, 85, 8);
+  /* background-color: rgb(148, 85, 8); */
 }
 .info-2 h1 {
   font-size: 40px;
@@ -210,12 +219,19 @@ p {
   /* text-align: center; */
   background-color: #fff;
 }
+.v-center {
+  padding-top: 42px;
+  transform: scale(4.5, 3);
+  color: gray;
+}
 .name {
+  line-height: 60px;
   width: 220px;
-  height: 50px;
+  height: 60px;
   /* vertical-align: middle; */
   /* padding: 10px; */
   margin: 20px 44px;
+  color: rgb(26, 26, 85);
 
   justify-content: center;
   text-align: center;
@@ -224,9 +240,17 @@ p {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
   /* background-color: blueviolet; */
 }
+.fa-name {
+  padding-right: 12px;
+  transform: scale(1.75, 1);
+}
 .name img {
+  /* line-height: 40px; */
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 180px;
-  height: 30px;
+  height: 50%;
+  vertical-align: middle;
 }
 .teams {
   /* padding: 120px; */
@@ -333,9 +357,9 @@ p {
   padding: 20px 30px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 400px;
+  height: 450px;
   border-style: none;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
 }
 .image img {
   width: 100%;
@@ -345,15 +369,19 @@ p {
 }
 .title {
   padding: 20px 0px;
-  height: 60px;
+  height: 65px;
 }
 .desc {
   height: 120px;
   /* background-color: aqua; */
 }
+/* .arrow {
+  margin-top: 50px;
+} */
 .arrow a {
   color: gray;
   margin-left: 20px;
+
   /* margin-top: 40px; */
   /* padding-top: 20px; */
 }
@@ -382,6 +410,7 @@ p {
   text-align: center;
 } */
 .sub-section input {
+  outline: none;
   width: 500px;
   height: 60px;
   margin: 30px 0;
@@ -389,6 +418,9 @@ p {
   border-style: none;
   padding: 10px 30px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+}
+.sub-section button {
+  margin-left: -160px;
 }
 
 footer {
@@ -454,4 +486,14 @@ footer p {
 }
 .ft-3 i {
   margin-right: 15px;
+}
+
+span {
+  /*border-bottom: 4px;
+  border-bottom-color: red;
+  border-bottom-style: solid;*/
+  text-decoration: underline;
+  text-decoration-color: rgb(223, 108, 63);
+  /* text-underline-position: unset; */
+  /* margin-top: -10px; */
 }
